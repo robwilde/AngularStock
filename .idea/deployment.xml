@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="BrisRB DEV" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="BrisRB DEV">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/BrisRB.dev/htdocs" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bc31e276-8169-42e3-bb1e-82813f31114b" name="BrisRB DEV" url="http://BrisRB.dev">
+        <fileTransfer host="192.168.5.70" port="22" rootFolder="/var/www" accessType="SFTP" password="dfdedfcfdfc9dfc2df98df9adf9bdf9fdff8dffd" username="itadmin">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

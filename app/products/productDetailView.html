@@ -1,0 +1,81 @@
+<div class = "panel panel-primary">
+    <div class = "panel-heading" style = "font-size:large">
+        {{vm.title}}
+    </div>
+
+    <div class = "panel-body">
+        <div class = "row">
+            <div class = "col-md-8">
+                <div class = "row">
+                    <div class = "col-md-2">Part Number:</div>
+                    <div class = "col-md-6">{{vm.product.productNumber}}</div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-2">Type:</div>
+                    <div class = "col-md-6">{{vm.product.type }}</div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-2">AH (20HR):</div>
+                    <div class = "col-md-6">{{vm.product.ah }}</div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-2">RC (MIN):</div>
+                    <div class = "col-md-6">{{vm.product.ah }}</div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-2">AH (20HR):</div>
+                    <div class = "col-md-6">{{vm.product.rc }}</div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-2">CCA (@ -18&#176;c):</div>
+                    <div class = "col-md-6">{{vm.product.cca }}</div>
+                </div>
+
+                <div class = "row">
+                    <div class = "col-md-2">Dimensions:</div>
+                    <div class = "col-md-6">
+                        (L) {{vm.product.dimensions.length }}mm |
+                        (W){{vm.product.dimensions.width }}mm |
+                        (H) {{vm.product.dimensions.height }}mm (incl terminal)
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-2">Cost:</div>
+                    <div class = "col-md-6">{{vm.product.cost|currency }}</div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-2">Price:</div>
+                    <div class = "col-md-6">{{ vm.product.price|currency }}</div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-2">Prime Stock:</div>
+                    <div class = "col-md-6">{{ vm.product.primeStock }}</div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-2">Vehicle Stock:</div>
+                    <div class = "col-md-6">{{vm.product.vehicleStock}}</div>
+                </div>
+            </div>
+
+            <div class = "col-md-4">
+                <img class = "center-block img-responsive"
+                     style = "width:200px;margin:2px;"
+                     src = "http://brisrb.dev/images/brisbra-battery-with-label.fw.png"
+                     title = "{{vm.product.productNumber}}">
+            </div>
+        </div>
+    </div>
+    <div class = "panel-footer">
+        <a class = "btn btn-default"
+           ui-sref = "productList"
+           style = "width:80px">
+            <I class = "glyphicon glyphicon-chevron-left"></i>
+            Back
+        </a>
+        <a class = "btn btn-primary"
+           ui-sref = "productEdit.info({productId: vm.product.productId})"
+           style = "width:80px;margin-left:10px">
+            Edit
+        </a>
+    </div>
+</div>

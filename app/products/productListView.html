@@ -1,0 +1,57 @@
+<div class = "panel panel-primary">
+    <div class = "panel-heading"
+         style = "font-size:large">Battery Stock
+    </div>
+
+    <div class = "panel-body">
+        <table class = "table">
+
+            <thead>
+            <tr>
+                <td>
+                    <button type = "button"
+                            class = "btn btn-primary"
+                            ng-click = "vm.toggleImage()">
+                        {{vm.showImage ? "Hide" : "Show"}} Image
+                    </button>
+                </td>
+                <td>Part Number</td>
+                <td>Type</td>
+                <td>Cost</td>
+                <td>Price</td>
+                <td>On Order</td>
+                <td>Ordered</td>
+                <td>Vehicle Stock</td>
+                <td>Prime Stock</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat = "product in vm.products">
+                <td>
+                    <img ng-if = "vm.showImage"
+                         ng-src = "{{vm.batteryImageThumb(product.productNumber)}}"
+                         style = "width:50px;margin:2px"
+                         title = "{{product.productNumber}}">
+                </td>
+                <td>
+                    <a ui-sref = "productDetail({productId: product.productId })">{{ product.productNumber }}</a>
+                </td>
+                <td>{{ product.type }}</td>
+                <td>{{ product.cost | currency }}</td>
+                <td>{{ product.price | currency }}</td>
+                <td>{{ product.orders }}</td>
+                <td>{{ product.ordered }}</td>
+                <td>{{ product.vehicleStock }}</td>
+                <td>{{ product.primeStock }}</td>
+
+                <td>
+                    <a ui-sref = "productEdit({productId: product.productId})" class = "btn btn-primary">
+                        Edit
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
