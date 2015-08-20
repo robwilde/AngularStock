@@ -8,6 +8,8 @@
       <w>maxcdn</w>
       <w>minified</w>
       <w>navbar</w>
+      <w>toastr</w>
+      <w>tpls</w>
     </words>
   </dictionary>
 </component>

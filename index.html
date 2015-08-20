@@ -6,6 +6,7 @@
 
     <!-- Style sheets -->
     <link rel = "stylesheet" href = "css/bootstrap.css">
+    <link rel = "stylesheet" href = "css/toastr.css">
     <link rel = "stylesheet" href = "css/app.css">
 
 </head>
@@ -45,14 +46,21 @@
 
 <!-- Library Scripts -->
 <!--jQuery-->
-<script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src = "//code.jquery.com/jquery-1.11.3.min.js"></script>
 <!--angular-->
-<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-<script src = "https://code.angularjs.org/1.4.4/angular-resource.min.js"></script>
-<script src = "https://code.angularjs.org/1.4.4/angular-mocks.js"></script>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-<!--BootStrap-->
-<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src = "//ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+<script src = "//code.angularjs.org/1.4.4/angular-resource.min.js"></script>
+<script src = "//code.angularjs.org/1.4.4/angular-mocks.js"></script>
+<script src = "//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<!-- Firebase -->
+<script src="//cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+<script src="//cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+<script src="//cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js"></script>
+<!--BootStrap and UI-->
+<script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src = "js/ui-utils.js"></script>
+<script src = "js/ui-bootstrap-tpls-0.13.3.min.js"></script>
+<script src = "js/toastr.js"></script>
 
 <!-- Application Script -->
 <script src = "app/app.js"></script>
@@ -64,7 +72,8 @@
 
 <!-- Product Controllers -->
 <script src = "app/products/productListCtrl.js"></script>
-<script src="app/products/productDetailCtrl.js"></script>
+<script src = "app/products/productDetailCtrl.js"></script>
+<script src = "app/products/ProductEditCtrl.js"></script>
 </body>
 
 </html>

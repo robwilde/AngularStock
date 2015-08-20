@@ -9,7 +9,8 @@
     app.run(function ($httpBackend) {
 
         var products = [
-            {" productId": 1,
+            {
+                "productId": 1,
                 "productNumber": "22F520SMF",
                 "ah": 54,
                 "rc": 95,
@@ -20,7 +21,7 @@
                     "height": 203
                 },
                 "terminal": "STD",
-                "hold-downs": "B9",
+                "holdDowns": "B9",
                 "cost": 75.00,
                 "price": 110.00,
                 "type": "BCI",
@@ -29,7 +30,8 @@
                 "vehicleStock": 3,
                 "primeStock": 4
             },
-            {" productId": 2,
+            {
+                "productId": 2,
                 "productNumber": "S50D20L",
                 "ah": 54,
                 "rc": 95,
@@ -40,7 +42,7 @@
                     "height": 203
                 },
                 "terminal": "STD",
-                "hold-downs": "B9",
+                "holdDowns": "B9",
                 "cost": 55.00,
                 "price": 95.00,
                 "type": "JIS",
@@ -49,7 +51,8 @@
                 "vehicleStock": 1,
                 "primeStock": 3
             },
-            {" productId": 3,
+            {
+                "productId": 3,
                 "productNumber": "AU22R600SMF",
                 "ah": 54,
                 "rc": 95,
@@ -60,7 +63,7 @@
                     "height": 203
                 },
                 "terminal": "STD",
-                "hold-downs": "B9",
+                "holdDowns": "B9",
                 "cost": 85.00,
                 "price": 125.00,
                 "type": "22F",

@@ -1,0 +1,88 @@
+<form class = "form-horizontal" name = "productForm">
+    <fieldset>
+        <legend>Basic Product Information</legend>
+        <div class = "form-group">
+            <label class = "col-md-2 control-label"
+                   for = "inputProductNumber">Product Part Number</label>
+
+            <div class = "col-md-4">
+                <input class = "form-control"
+                       id = "inputProductNumber"
+                       type = "text"
+                       placeholder = "Part Number"
+                       ng-model = "vm.product.productNumber" />
+            </div>
+        </div>
+
+        <div class = "form-group">
+            <label class = "col-md-2 control-label" for = "inputProductType">Type</label>
+            <div class = "col-md-2">
+                <input class = "form-control" id = "inputProductType" type = "text" placeholder = "" ng-model = "vm.product.type" />
+            </div>
+
+            <label class = "col-md-2 control-label" for = "inputProductTerminal">Terminal</label>
+            <div class = "col-md-2">
+                <input class = "form-control" id = "inputProductTerminal" type = "text" placeholder = "" ng-model = "vm.product.terminal" />
+            </div>
+
+            <label class = "col-md-2 control-label" for = "inputProductHoldDowns">Hold Downs</label>
+            <div class = "col-md-2">
+                <input class = "form-control" id = "inputProductHoldDowns" type = "text" placeholder = "" ng-model = "vm.product.holdDowns" />
+            </div>
+        </div>
+
+        <div class = "form-group">
+            <label class = "col-md-2 control-label" for = "inputProductAh">AH (20 HR)</label>
+            <div class = "col-md-2">
+                <input class = "form-control" id = "inputProductAh" type = "text" placeholder = "" ng-model = "vm.product.ah" />
+            </div>
+
+            <label class = "col-md-2 control-label" for = "inputProductRc">RC (MIN)</label>
+            <div class = "col-md-2">
+                <input class = "form-control" id = "inputProductRc" type = "text" placeholder = "" ng-model = "vm.product.rc" />
+            </div>
+
+            <label class = "col-md-2 control-label" for = "inputProductCca">CCA (@ -18&#176;c)</label>
+            <div class = "col-md-2">
+                <input class = "form-control" id = "inputProductCca" type = "text" placeholder = "" ng-model = "vm.product.cca" />
+            </div>
+        </div>
+
+        <div class = "form-group">
+            <label class = "col-md-2 control-label" for = "inputProductLength">Length</label>
+            <div class = "col-md-2">
+                <input class = "form-control" id = "inputProductLength" type = "text" placeholder = "" ng-model = "vm.product.dimensions.length" />
+            </div>
+
+            <label class = "col-md-2 control-label" for = "inputProductWidth">Width</label>
+            <div class = "col-md-2">
+                <input class = "form-control" id = "inputProductWidth" type = "text" placeholder = "" ng-model = "vm.product.dimensions.width" />
+            </div>
+
+            <label class = "col-md-2 control-label" for = "inputProductHeight">Height</label>
+            <div class = "col-md-2">
+                <input class = "form-control" id = "inputProductHeight" type = "text" placeholder = "" ng-model = "vm.product.dimensions.height" />
+            </div>
+        </div>
+
+        <div class = "form-group">
+            <div class = "col-md-4 col-md-offset-2">
+                    <span>
+                        <button class = "btn btn-primary"
+                                style = "width:80px;margin-right:10px"
+                                ng-click = "vm.submit(true)">
+                            Save
+                        </button>
+                    </span>
+                    <span>
+                        <button class = "btn btn-default"
+                                style = "width:70px"
+                                ng-click = "vm.cancel()">
+                            Cancel
+                        </button>
+                    </span>
+            </div>
+        </div>
+
+    </fieldset>
+</form>

@@ -9,7 +9,10 @@
     <orderEntry type="library" name="angular-resource" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="angular-mocks" level="application" />
-    <orderEntry type="library" name="jquery-1.11.3" level="application" />
     <orderEntry type="library" name="angular-ui-router" level="application" />
+    <orderEntry type="library" name="jquery-1.11.3" level="application" />
+    <orderEntry type="library" name="angularfire" level="application" />
+    <orderEntry type="library" name="firebase" level="application" />
+    <orderEntry type="library" name="firebase-simple-login" level="application" />
   </component>
 </module>

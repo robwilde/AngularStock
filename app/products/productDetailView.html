@@ -7,53 +7,45 @@
         <div class = "row">
             <div class = "col-md-8">
                 <div class = "row">
-                    <div class = "col-md-2">Part Number:</div>
-                    <div class = "col-md-6">{{vm.product.productNumber}}</div>
+                    <div class = "col-md-3">Part Number:</div>
+                    <div class = "col-md-5">{{vm.product.productNumber}}</div>
                 </div>
                 <div class = "row">
-                    <div class = "col-md-2">Type:</div>
-                    <div class = "col-md-6">{{vm.product.type }}</div>
+                    <div class = "col-md-3">Type:</div>
+                    <div class = "col-md-5">{{vm.product.type }}</div>
                 </div>
                 <div class = "row">
-                    <div class = "col-md-2">AH (20HR):</div>
-                    <div class = "col-md-6">{{vm.product.ah }}</div>
+                    <div class = "col-md-3">AH (20HR):</div>
+                    <div class = "col-md-5">{{vm.product.ah }}</div>
                 </div>
                 <div class = "row">
-                    <div class = "col-md-2">RC (MIN):</div>
-                    <div class = "col-md-6">{{vm.product.ah }}</div>
+                    <div class = "col-md-3">RC (MIN):</div>
+                    <div class = "col-md-5">{{vm.product.ah }}</div>
                 </div>
                 <div class = "row">
-                    <div class = "col-md-2">AH (20HR):</div>
-                    <div class = "col-md-6">{{vm.product.rc }}</div>
+                    <div class = "col-md-3">AH (20HR):</div>
+                    <div class = "col-md-5">{{vm.product.rc }}</div>
                 </div>
                 <div class = "row">
-                    <div class = "col-md-2">CCA (@ -18&#176;c):</div>
-                    <div class = "col-md-6">{{vm.product.cca }}</div>
+                    <div class = "col-md-3">CCA (@ -18&#176;c):</div>
+                    <div class = "col-md-5">{{vm.product.cca }}</div>
                 </div>
 
                 <div class = "row">
-                    <div class = "col-md-2">Dimensions:</div>
-                    <div class = "col-md-6">
+                    <div class = "col-md-3">Dimensions:</div>
+                    <div class = "col-md-5">
                         (L) {{vm.product.dimensions.length }}mm |
                         (W){{vm.product.dimensions.width }}mm |
                         (H) {{vm.product.dimensions.height }}mm (incl terminal)
                     </div>
                 </div>
                 <div class = "row">
-                    <div class = "col-md-2">Cost:</div>
-                    <div class = "col-md-6">{{vm.product.cost|currency }}</div>
+                    <div class = "col-md-3">Cost:</div>
+                    <div class = "col-md-5">{{vm.product.cost|currency }}</div>
                 </div>
                 <div class = "row">
-                    <div class = "col-md-2">Price:</div>
-                    <div class = "col-md-6">{{ vm.product.price|currency }}</div>
-                </div>
-                <div class = "row">
-                    <div class = "col-md-2">Prime Stock:</div>
-                    <div class = "col-md-6">{{ vm.product.primeStock }}</div>
-                </div>
-                <div class = "row">
-                    <div class = "col-md-2">Vehicle Stock:</div>
-                    <div class = "col-md-6">{{vm.product.vehicleStock}}</div>
+                    <div class = "col-md-3">Price:</div>
+                    <div class = "col-md-5">{{ vm.product.price|currency }}</div>
                 </div>
             </div>
 
@@ -62,6 +54,29 @@
                      style = "width:200px;margin:2px;"
                      src = "http://brisrb.dev/images/brisbra-battery-with-label.fw.png"
                      title = "{{vm.product.productNumber}}">
+            </div>
+        </div>
+        <div class = "row"><p></p></div>
+        <div class = "row">
+            <div class = "col-md-10 col-md-offset-1">
+                <table class = "table table-bordered text-center">
+                    <thead>
+                    <tr>
+                        <th>On Order [OUT]</th>
+                        <th>Ordered [IN]</th>
+                        <th>Vehicle Stock</th>
+                        <th>Prime Stock</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>{{ vm.product.orders }}</td>
+                        <td>{{ vm.product.ordered }}</td>
+                        <td>{{ vm.product.vehicleStock }}</td>
+                        <td>{{ vm.product.primeStock }}</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
